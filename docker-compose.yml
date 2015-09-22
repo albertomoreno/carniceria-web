@@ -1,0 +1,16 @@
+
+web:
+  build: .
+  dockerfile: Dockerfile
+  ports:
+    - "8000:8000"
+  volumes:
+    - ".:/opt/web"
+  links:
+    - database
+  command: "bash" 
+
+database:
+  image: tutum/mongodb
+  environment:
+    AUTH: no

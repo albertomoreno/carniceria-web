@@ -1,0 +1,7 @@
+{% extends "views/front/base.nj" %}
+
+{% block tittle %}Carniceria{% endblock %}
+
+{% block content %}
+  <p>hola, mundo</p>
+{% endblock %}
