@@ -1,3 +1,7 @@
+// Copyright (c) 2015 Alberto Moreno.
+// Use of this source code is governed by a MIT-style license that
+// can be found in the LICENSE.md file.
+
 'use strict';
 
 var gulp = require('gulp'),
@@ -72,7 +76,7 @@ gulp.task('clean', function() {
 
 
 gulp.task('images:build', function(taskDone) {
-    var images = 'src/images/**/*.{jpg,gif,png,svg}';
+    var images = 'src/images/*.{jpg,gif,png,svg}';
     return gulp.src(images)
       .pipe($.cache($.imagemin({progressive: true, interlaced: true})))
       // Renaming sets the correct path for cached files so we leave them in the
@@ -124,7 +128,7 @@ gulp.task('styles:build', function(done) {
 
 
 gulp.task('styles:autoprefix', function() {
-  return gulp.src('tmp/styles/**/*.css')
+  return gulp.src('tmp/styles/*.css')
     .pipe($.autoprefixer({
       browsers: ['last 3 versions'],
     }))
