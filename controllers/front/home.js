@@ -14,3 +14,4 @@ home.get('/', function(req, res) {
   template.render(res, 'front/home/home');
 });
 
+

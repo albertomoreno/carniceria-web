@@ -6,9 +6,11 @@
 
 var gulp = require('gulp'),
     $ = require('gulp-load-plugins')(),
+    runSequence = require('run-sequence'),
     rimraf = require('rimraf'),
+    supervisor = require('supervisor'),
     childProcess = require('child_process'),
-    _ = require('lodash'),
+    _ = require('lodash');
 
 
 var exec = function(cmd, done) {
@@ -37,29 +39,34 @@ gulp.task('styles:watch', function() {
     '--cache-location tmp/sass-cache',
     '--compass',
     '--load-path static/styles',
-    'static/styles:tmp/styles',
+    'static/styles:tmp/assets',
   ];
   exec(cmd.join(' '));
 
   setTimeout(function() {
-    $.watch('tmp/styles/**/*.css', {ignoreInitial: false})
+    $.watch('tmp/assets/**/*.css', {ignoreInitial: false})
       .pipe($.autoprefixer({
         browsers: ['last 3 versions'],
       }))
-      .pipe(gulp.dest('dist/styles'))
+      .pipe(gulp.dest('tmp/styles'))
       .pipe($.livereload());
-  }, 8000);
+  }, 5000);
 });
 
 
 gulp.task('livereload', function() {
   $.watch([
-    
+    'views/**/*.nj',
   ], function(files) {
     $.livereload.reload();
   });
 
   $.livereload.listen();
+});
+
+
+gulp.task('supervisor', function() {
+  supervisor.run(['index.js']);
 });
 
 
@@ -71,7 +78,7 @@ gulp.task('default', function () {
 gulp.task('clean', function() {
   rimraf.sync('tmp/styles');
   rimraf.sync('tmp/scripts');
-  rimraf.sync('src/static');
+  rimraf.sync('tmp/assets');
 });
 
 
@@ -89,14 +96,13 @@ gulp.task('images:build', function(taskDone) {
 gulp.task('serve', function(done) {
   runSequence(
     'clean',
-    'templates:build',
     [
-      'fonts:publish',
       'scripts:vendor',
     ],
     [
       'styles:watch',
       'livereload',
+      'supervisor'
     ],
     done
   );
@@ -121,28 +127,18 @@ gulp.task('styles:build', function(done) {
     '--cache-location tmp/sass-cache',
     '--compass',
     '--load-path static/styles',
-    'static/styles:tmp/styles',
+    'static/styles:tmp/assets',
   ];
   exec(cmd.join(' '), done);
 });
 
 
 gulp.task('styles:autoprefix', function() {
-  return gulp.src('tmp/styles/*.css')
+  return gulp.src('tmp/assets/*.css')
     .pipe($.autoprefixer({
       browsers: ['last 3 versions'],
     }))
     .pipe(gulp.dest('tmp/styles'));
-});
-  
-
-gulp.task('styles:minify', function() {
-    return gulp.src('tmp/styles/' + project + '.css')
-      .pipe($.cache($.minifyCss({keepSpecialComments: 0})))
-      // Renaming sets the correct path for cached files so we leave them in the
-      // correct final folder.
-      .pipe($.rename({dirname: '.'}))
-      .pipe(gulp.dest('src/static/styles'))
 });
 
 
@@ -164,7 +160,6 @@ gulp.task('build', function(done) {
     [
       'styles:autoprefix',
     ],
-    'styles:minify',
     'rev',
     done
   )

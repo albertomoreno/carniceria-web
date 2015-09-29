@@ -12,7 +12,11 @@ RUN apt-get install -y curl
 
 RUN curl -sL https://deb.nodesource.com/setup_0.12 | bash -
 RUN apt-get install -y nodejs
-RUN npm install -g nodemon
+RUN apt-get install -y ruby ruby-dev
+RUN gem install compass --version 0.12.6
+
+RUN npm install -g gulp
+RUN npm install -g supervisor
 
 RUN groupadd -r -g 1000 docker && \
     useradd -r -g docker -u 1000 alberto && \

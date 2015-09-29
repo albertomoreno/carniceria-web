@@ -1,6 +1,6 @@
 {
   "name": "carniceria-web",
-  "description": "",
+  "description": "Carniceria",
   "version": "0.0.1",
   "main": "index.js",
   "repository": {
@@ -20,12 +20,16 @@
     "gulp-livereload": "^3.8.0",
     "gulp-load-plugins": "^0.10.0",
     "gulp-rename": "^1.2.2",
-    "gulp-rimraf": "^0.1.1",
     "gulp-util": "^3.0.6",
-    "gulp-watch": "^4.3.5"
+    "gulp-watch": "^4.3.5",
+    "rimraf": "^2.4.3",
+    "run-sequence": "^1.1.4",
+    "supervisor": "^0.9.1"
   },
   "dependencies": {
+    "bootstrap-sass": "^3.3.5",
     "express": "^4.13.3",
+    "font-awesome": "^4.4.0",
     "lodash": "^3.10.1",
     "mongodb": "^2.0.43",
     "nunjucks": "^2.0.0"
