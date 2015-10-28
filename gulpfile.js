@@ -77,8 +77,9 @@ gulp.task('default', function () {
 
 gulp.task('clean', function() {
   rimraf.sync('tmp/styles');
-  rimraf.sync('tmp/scripts');
   rimraf.sync('tmp/assets');
+  rimraf.sync('tmp/fonts');
+  rimraf.sync('tmp/vendor');
 });
 
 
@@ -98,6 +99,7 @@ gulp.task('serve', function(done) {
     'clean',
     [
       'scripts:vendor',
+      'fonts:publish',
     ],
     [
       'styles:watch',
@@ -109,12 +111,19 @@ gulp.task('serve', function(done) {
 });
 
 
+gulp.task('fonts:publish', function() {
+  return gulp.src('node_modules/font-awesome/fonts/*')
+    .pipe(gulp.dest('tmp/fonts'));
+});
+
+
 gulp.task('scripts:vendor', function() {
   var files = [
-    'node_modules/jquery/dist/jquery.min,js',
+    'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
   ];
   return gulp.src(files)
-    .pipe(gulp.dest('static/vendor'));
+    .pipe(gulp.dest('tmp/vendor'));
 });
 
 

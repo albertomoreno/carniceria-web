@@ -5,16 +5,108 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="/tmp/styles/core/main.css">
   <link rel="stylesheet" href="/tmp/styles/bootstrap/main.css">
+  <link rel="stylesheet" href="/tmp/styles/core/main.css">
+
+  <script src="/tmp/vendor/jquery.min.js"></script>
+  <script src="/tmp/vendor/bootstrap.min.js"></script>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
   <title>{% block title %}{% endblock %}</title>
 
 </head>
 <body>
 
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="navbar-brand visible-xs">
+          <a href="/">
+            <span itemscope itemtype="http://schema.org/Organization">
+              <img src="/static/images/logo_cortador_img.png" alt="">
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Cortador Profesional</a></li>
+          <li><a href="#">Quienes somos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="page">
+    <div class="image-jumbotron">
+      <div class="background">
+        <div class="background-mask background-mask-hidden"></div>
+        <img src="/static/images/nico2_img.jpg" alt="">
+      </div>
+    </div>
+    <div class="home-logo hidden-xs">
+      <div class="jumbotron-logo">
+        <a href="/">
+        <span itemscope itemtype="http://schema.org/Organization">
+          <img src="/static/images/logo_carniceria.png" alt="">
+        </span>
+        </a>
+      </div>
+    </div>
+    <div class="jumbotron-brand hidden-xs">
+      <a href="/">
+      <span itemscope itemtype="http://schema.org/Organization">
+        <img src="/static/images/logo_cortador_img.png" alt="">
+      </span>
+      </a>
+    </div>
+  </div>
+
 
   {% block content %}{% endblock %}
+
+
+  <footer>
+    <div class="container">
+      <div>
+        <div class="col-sm-5">
+          <h5>Nicolas Garcia Cortador</h5>
+          <p>Nicolas Garcia, cortador profesional de jamon, es miembro de la asociacion nacional de cortadores de jamon (ANCJ).<br>
+            Ganador de varios premios en concursos nacionales de cortadores.<br>
+            Presentaciones en bodas, comuniones, bautizos, eventos.<br>
+            Tallado de jamones.
+          </p>
+        </div>
+        <div class="col-sm-3">
+          <h5>Social</h5>
+          <p class="footer-icon"><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/nicolas.g.rodrigiez">Facebook</a></p>
+        </div>
+        <div class="col-sm-4">
+          <h5>Contacto</h5>
+          <p class="footer-icon"><i class="fa fa-phone"></i> 605 061 292</p>
+          <p class="footer-icon"><i class="fa fa-envelope"></i> nicocarniceros@gmail.com</p>
+          <p class="footer-icon"><i class="fa fa-home"></i> C/ Abellan 1, Huetor Tajar(Granada)</p>
+          <p class="footer-icon"><i class="fa fa-home"></i> C/ Federico García Lorca, 16, Huetor Tajar(Granada)</p>
+        </div>
+      </div>
+      <div class="col-xs-12 copyright">
+        <p>&copy Alberto Moreno Alcaraz</p>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
