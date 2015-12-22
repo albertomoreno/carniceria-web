@@ -31,30 +31,38 @@
   </div>
 
   <div class="content">
+    <div class="page-title">
+      <h1>Nico Garcia Seleccion</h1>
+    </div>
     <div class="container">
-          <h1><span>Nico Garcia Seleccion</span></h1>
+      <!-- <h1><span>Nico Garcia Seleccion</span></h1> -->
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
-        <h1>Nuestras Marcas</h1>
-        <p>Trabajamos con las siguientes marcas: </p>
-        <div class="brand-image col-md-2 col-xs-12">
-          <img src="/static/images/elpozo.jpg" alt="">
-        </div>
-        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
-          <img src="/static/images/elpozo.jpg" alt="">
-        </div>
-        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
-          <img src="/static/images/elpozo.jpg" alt="">
-        </div>
-        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
-          <img src="/static/images/elpozo.jpg" alt="">
-        </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+    
+      <div class="title-split">
+        <h2>Nuestras Marcas</h2>
+        <div class="line"></div>
+      </div>
+
+      <p>Trabajamos con las siguientes marcas: </p>
+      <div class="brand-image col-md-2 col-xs-12">
+        <img src="/static/images/elpozo.jpg" alt="">
+      </div>
+      <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+        <img src="/static/images/elpozo.jpg" alt="">
+      </div>
+      <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+        <img src="/static/images/elpozo.jpg" alt="">
+      </div>
+      <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+        <img src="/static/images/elpozo.jpg" alt="">
+      </div>
     </div>
   </div>
   

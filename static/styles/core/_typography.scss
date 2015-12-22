@@ -1,17 +1,19 @@
 
+.page-title {
+  padding: 10px 80px;
+  background-color: #e9e9e9;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #c0c0c0;
+}
+
 h1 {
   text-transform: uppercase;
-  color: $brand-primary;
-  padding-bottom: 10px;
+  line-height: 40px;
+  text-shadow: 0 0 1px rgba(0,0,0,0.01);
+  color: lighten($brand-primary, 30%);
   margin-bottom: 20px;
-  border-bottom: 2px solid $primary-color;
-  text-shadow: 1px 1px 2px grey;
-
   font-size: 28px;
-  & > span {
-    font-size: 34px;
-    font-weight: 600;
-  }
+  font-weight: bold;
 }
 
 h2 {

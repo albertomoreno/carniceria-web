@@ -30,9 +30,11 @@
   </div>
 
   <div class="content">
-    <div class="container">
+    <div class="page-title">
       <h1>Sobre nosotros</h1>
+    </div>
 
+    <div class="container">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
