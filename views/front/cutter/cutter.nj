@@ -1,0 +1,113 @@
+{% extends "views/front/base.nj" %}
+
+{% block tittle %}Nico Garcia Cortador Profesional de Jamon{% endblock %}
+
+{% block content %}
+  <div class="page">
+    <div class="image-jumbotron">
+      <div class="background">
+        <div class="background-mask background-mask-hidden"></div>
+        <img src="/static/images/nico2_img.jpg" alt="">
+      </div>
+    </div>
+    <!-- <div class="home-logo hidden-xs">
+      <div class="jumbotron-logo">
+        <a href="/">
+        <span itemscope itemtype="http://schema.org/Organization">
+          <img src="/static/images/logo_carniceria.png" alt="">
+        </span>
+        </a>
+      </div>
+    </div> -->
+    <div class="jumbotron-brand hidden-xs">
+      <a href="/">
+      <span itemscope itemtype="http://schema.org/Organization">
+        <img src="/static/images/logo_cortador_img.png" alt="">
+      </span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <h1>Cortador Profesional</h1>
+
+      <div class="row">
+        <div class="col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+        </div>
+
+        <div class="col-md-3 col-xs-8 img">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 img hidden-xs hidden-sm">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+
+        <div class="col-md-9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+        </div>
+
+        <div class="col-xs-8 img visible-xs visible-sm">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+      </div>
+
+      <h1>Premios</h1>
+
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Primer premio</h2>
+          <ul class="awards">
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-8 img">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 img hidden-xs hidden-sm">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+
+        <div class="col-md-9">
+          <h2>Segundo premio</h2>
+          <ul class="awards">
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+          </ul>
+        </div>
+
+        <div class="col-xs-8 img visible-xs visible-sm">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Tercer premio</h2>
+          <ul class="awards">
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+            <li>II Concurso Nacional de Cortadores de Jamon de Tomelloso.</li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 col-xs-8 img">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+{% endblock %}

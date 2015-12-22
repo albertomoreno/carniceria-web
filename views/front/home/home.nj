@@ -3,5 +3,100 @@
 {% block tittle %}Carniceria{% endblock %}
 
 {% block content %}
-  <p>hola, mundo</p>
+  
+  <div class="page">
+    <div class="image-jumbotron">
+      <div class="background">
+        <div class="background-mask background-mask-hidden"></div>
+        <img src="/static/images/nico2_img.jpg" alt="">
+      </div>
+    </div>
+    <!-- <div class="home-logo hidden-xs">
+      <div class="jumbotron-logo">
+        <a href="/">
+        <span itemscope itemtype="http://schema.org/Organization">
+          <img src="/static/images/logo_carniceria.png" alt="">
+        </span>
+        </a>
+      </div>
+    </div> -->
+    <div class="jumbotron-brand hidden-xs">
+      <a href="/">
+      <span itemscope itemtype="http://schema.org/Organization">
+        <img src="/static/images/logo_cortador_img.png" alt="">
+      </span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="container">
+          <h1><span>Nico Garcia Seleccion</span></h1>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+        <h1>Nuestras Marcas</h1>
+        <p>Trabajamos con las siguientes marcas: </p>
+        <div class="brand-image col-md-2 col-xs-12">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+        <div class="brand-image col-md-2 col-xs-12 col-md-offset-1">
+          <img src="/static/images/elpozo.jpg" alt="">
+        </div>
+    </div>
+  </div>
+  
+  <div class="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-4 service">
+          <div class="service-img">
+            <img src="/static/images/logo_carniceria.png" alt="favicon">
+          </div>
+          <div class="service-tittle">
+            Calidad Garantizada
+          </div>
+          <div class="service-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquid, libero ut neque et culpa, repudiandae fugiat hic rem voluptas laudantium molestias voluptates modi nihil rerum similique ipsum dolores, adipisci!</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 service">
+          <div class="service-img">
+            <img src="/static/images/logo_carniceria.png" alt="favicon">
+          </div>
+          <div class="service-tittle">
+            Productos 100% Naturales
+          </div>
+          <div class="service-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquid, libero ut neque et culpa, repudiandae fugiat hic rem voluptas laudantium molestias voluptates modi nihil rerum similique ipsum dolores, adipisci!</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-lg-4 service">
+          <div class="service-img">
+            <img src="/static/images/logo_carniceria.png" alt="favicon">
+          </div>
+          <div class="service-tittle">
+            Elaboracion Artesanal 
+          </div>
+          <div class="service-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquid, libero ut neque et culpa, repudiandae fugiat hic rem voluptas laudantium molestias voluptates modi nihil rerum similique ipsum dolores, adipisci!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 {% endblock %}

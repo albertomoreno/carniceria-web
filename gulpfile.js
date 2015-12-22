@@ -120,7 +120,9 @@ gulp.task('fonts:publish', function() {
 gulp.task('scripts:vendor', function() {
   var files = [
     'node_modules/jquery/dist/jquery.min.js',
+    'node_modules/angular/angular.min.js',
     'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js',
+    'static/scripts/map.js',
   ];
   return gulp.src(files)
     .pipe(gulp.dest('tmp/vendor'));

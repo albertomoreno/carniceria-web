@@ -1,0 +1,81 @@
+{% extends "views/front/base.nj" %}
+
+{% block tittle %}Contacto{% endblock %}
+
+{% block scripts %}
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+{% endblock %}
+
+{% block content %}
+  <div class="page">
+    <div class="map" id="map"></div>
+    <!-- <div class="image-jumbotron">
+      <div class="background">
+        <div class="background-mask background-mask-hidden"></div>
+        <img src="/static/images/cartel_nuevo.jpg" alt="">
+      </div>
+    </div>
+    <div class="jumbotron-brand hidden-xs">
+      <a href="/">
+      <span itemscope itemtype="http://schema.org/Organization">
+        <img src="/static/images/logo_cortador_img.png" alt="">
+      </span>
+      </a>
+    </div> -->
+
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="col-xs-12 col-sm-6">
+          <h1>Contacta con nosotros</h1>
+
+          <p>Puede realizarnos consultas o sugerencias a traves del correo electronico o del telefono, o tambien utilizando el formulatio de contacto que ponemos a su disposicion. Para ello, le dejamos nuestros datos de contacto: </p>
+
+          <p class="contact-name">Nico Garcia Seleccion</p>
+          <p>
+            C/ Abellan 1 - Huetor Tajar(Granada)<br>
+            C/ Federico García Lorca, 16 - Huetor Tajar(Granada)
+          </p>
+          <p><strong>Telefono:</strong> 605 061 292 - 605 061 265</p>
+          <p><strong>Email:</strong> nicogarciaseleccion@gmail.com</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-6">
+        <h1>Formulario de contacto</h1>
+        <!-- jj{{ data }} -->
+        <form ng-controller="ContactFormCtrl">
+          <div class="form-group">
+            <label for="name">Nombre: </label>
+            <input class="form-control" type="text" id="name">
+          </div>
+          <!-- tt{{ data }} -->
+          <div class="form-group">
+            <label for="name">Correo electronico: </label>
+            <input class="form-control" type="email" id="name">
+          </div>
+          <div class="form-group">
+            <label for="name">Telefono (Opcional): </label>
+            <input class="form-control" type="tel" id="name">
+          </div>
+          <div class="form-group">
+            <label for="name">Mensaje: </label>
+            <textarea class="form-control" type="text" id="name" rows="5"></textarea>
+          </div>
+
+          <input class="btn btn-primary" type="submit" value="Enviar Mensaje">
+        </form>
+      </div>
+    </div>
+    
+    <!-- <div class="container">
+      <h1>Localizacion</h1>
+
+      <div class="map" id="map"></div>
+
+    </div> -->
+  </div>
+
+
+
+{% endblock %}

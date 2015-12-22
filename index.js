@@ -17,6 +17,9 @@ app.use('/tmp/vendor', express.static(path.join(__dirname, 'tmp', 'vendor')));
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
 app.use(require('./controllers/front/home'));
+app.use(require('./controllers/front/information'));
+app.use(require('./controllers/front/products'));
+app.use(require('./controllers/front/cutter'));
 
 
 nunjucks.configure({ noCache: true });

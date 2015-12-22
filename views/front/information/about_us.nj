@@ -1,0 +1,46 @@
+{% extends "views/front/base.nj" %}
+
+{% block tittle %}Sobre Nosotros{% endblock %}
+
+{% block content %}
+  <div class="page">
+    <div class="image-jumbotron">
+      <div class="background">
+        <div class="background-mask background-mask-hidden"></div>
+        <img src="/static/images/nico2_img.jpg" alt="">
+      </div>
+    </div>
+    <!-- <div class="home-logo hidden-xs">
+      <div class="jumbotron-logo">
+        <a href="/">
+        <span itemscope itemtype="http://schema.org/Organization">
+          <img src="/static/images/logo_carniceria.png" alt="">
+        </span>
+        </a>
+      </div>
+    </div> -->
+    <div class="jumbotron-brand hidden-xs">
+      <a href="/">
+      <span itemscope itemtype="http://schema.org/Organization">
+        <img src="/static/images/logo_cortador_img.png" alt="">
+      </span>
+      </a>
+    </div>
+
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <h1>Sobre nosotros</h1>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur obcaecati doloribus, earum suscipit dolor quo molestiae eligendi quis in corporis, officia voluptatem natus iusto quia facere excepturi laudantium ea aperiam.</p>
+        
+    </div>
+  </div>
+
+
+{% endblock %}

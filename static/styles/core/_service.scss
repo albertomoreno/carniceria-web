@@ -1,0 +1,41 @@
+
+.services {
+  background-color: #ddd;
+  margin-top: 30px;
+  margin-bottom: -30px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+
+.service {
+  border-right: 1px solid #aaa;
+
+  &:hover > .service-img {
+    transition: transform .4s ease;
+    transform: scale(1.2);
+  }
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.service-img {
+  text-align: center;
+  margin-bottom: 15px;
+
+  & > img {
+    width: 64px;
+  }
+}
+
+.service-tittle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.service-text {
+  text-align: center;
+}
