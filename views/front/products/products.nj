@@ -38,7 +38,7 @@
     <div class="container">
         <div class="row container">
           <div class="col-md-3 our-brand hidden-xs hidden-sm">
-            <h4>Nuestras Marcas</h4>
+            <h3>Nuestras Marcas</h3>
             <div class="brand-image">
               <img src="/static/images/elpozo.jpg" alt="">
             </div>
@@ -62,7 +62,7 @@
                     <img src="/static/images/producto_ejemplo.jpg" alt="">
                   </div>
                   <div class="product-name">
-                    <h5>Jamon Iberico de Bellota Sanchez Romero Carvajal</h5>
+                    <h4>Jamon Iberico de Bellota Sanchez Romero Carvajal</h4>
                   </div>
                   <div class="product-desc">
                     <p>Jamón de Cerdo de bellota 100% Ibérico. Un producto rico y saludable que forma parte de la dieta mediterránea. Elaborado a partir de una selección de los mejores cerdos ibéricos puros criados en libertad en las dehesas de la península ibérica.</p>
