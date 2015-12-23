@@ -37,7 +37,7 @@
 
     <div class="container">
         <div class="row container">
-          <div class="col-md-2 our-brand hidden-xs hidden-sm">
+          <div class="col-md-3 our-brand hidden-xs hidden-sm">
             <h4>Nuestras Marcas</h4>
             <div class="brand-image">
               <img src="/static/images/elpozo.jpg" alt="">
@@ -53,17 +53,20 @@
             </div>
           </div>
 
-          <div class="col-md-10 products">
+          <div class="col-md-9 products">
             {% for i in [1,2,3,4,5,6,7,8,9] %}
-              <div class="col-md-3 col-sm-5 product col-md-offset-1 col-sm-offset-1">
-                <div class="product-image">
-                  <img src="/static/images/producto_ejemplo.jpg" alt="">
-                </div>
-                <div class="product-name">
-                  <h5>Jamon Iberico de Bellota Sanchez Romero Carvajal</h5>
-                </div>
-                <div class="product-desc">
-                  <p>Jamón de Cerdo de bellota 100% Ibérico. Un producto rico y saludable que forma parte de la dieta mediterránea. Elaborado a partir de una selección de los mejores cerdos ibéricos puros criados en libertad en las dehesas de la península ibérica.<br><br>Pieza de 7kg/aprox.</p>
+              <!-- <div class="col-md-3 col-sm-5 product col-md-offset-1 col-sm-offset-1"> -->
+              <div class="col-md-4 col-sm-6 item-product">
+                <div class="product">
+                  <div class="product-image">
+                    <img src="/static/images/producto_ejemplo.jpg" alt="">
+                  </div>
+                  <div class="product-name">
+                    <h5>Jamon Iberico de Bellota Sanchez Romero Carvajal</h5>
+                  </div>
+                  <div class="product-desc">
+                    <p>Jamón de Cerdo de bellota 100% Ibérico. Un producto rico y saludable que forma parte de la dieta mediterránea. Elaborado a partir de una selección de los mejores cerdos ibéricos puros criados en libertad en las dehesas de la península ibérica.</p>
+                  </div>
                 </div>
               </div>
             {% endfor %}
