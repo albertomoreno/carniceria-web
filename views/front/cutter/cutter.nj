@@ -59,7 +59,10 @@
         </div>
       </div>
 
-      <h1>Premios</h1>
+      <div class="title-split">
+        <div class="line"></div>
+        <h2>Premios</h2>
+      </div>
 
       <div class="row">
         <div class="col-md-9">

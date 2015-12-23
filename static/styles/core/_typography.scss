@@ -6,6 +6,25 @@
   border-bottom: 1px solid #c0c0c0;
 }
 
+.title-split {
+  position: relative;
+
+  & > .line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid #c2c1c1;
+  }
+
+  & > h2 {
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    padding-right: 20px;
+  }
+}
+
 h1 {
   text-transform: uppercase;
   line-height: 40px;
@@ -18,11 +37,21 @@ h1 {
 
 h2 {
   text-transform: uppercase;
+  line-height: 40px;
+  text-shadow: 0 0 1px rgba(0,0,0,0.01);
+  color: lighten($brand-primary, 20%);
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* h2 {
+  text-transform: uppercase;
   font-size: 22px;
   color: $primary-color;
   // font-weight: bold;
   text-shadow: 1px 1px 1px lighten($primary-color, 15%);
-}
+} */
 
 .contact-name {
   color: black;

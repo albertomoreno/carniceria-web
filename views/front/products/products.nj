@@ -72,7 +72,10 @@
         </div>
 
         <div class="packing">
-          <h1>Corte y Envasado</h1>
+          <div class="title-split">
+            <div class="line"></div>
+            <h2>Corte y Envasado</h2>
+          </div>
 
           <div class="row">
             <div class="col-md-9">

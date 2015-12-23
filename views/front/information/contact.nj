@@ -30,23 +30,13 @@
       <h1>Contacto</h1>
     </div>
     <div class="container">
-      <div class="col-xs-12 col-sm-6">
-          <h1>Contacta con nosotros</h1>
-
-          <p>Puede realizarnos consultas o sugerencias a traves del correo electronico o del telefono, o tambien utilizando el formulatio de contacto que ponemos a su disposicion. Para ello, le dejamos nuestros datos de contacto: </p>
-
-          <p class="contact-name">Nico Garcia Seleccion</p>
-          <p>
-            C/ Abellan 1 - Huetor Tajar(Granada)<br>
-            C/ Federico García Lorca, 16 - Huetor Tajar(Granada)
-          </p>
-          <p><strong>Telefono:</strong> 605 061 292 - 605 061 265</p>
-          <p><strong>Email:</strong> nicogarciaseleccion@gmail.com</p>
+      <div class="title-split">
+        <div class="line col-sm-8"></div>
+        <h2>Formulario de contacto</h2>
       </div>
-
-      <div class="col-xs-12 col-sm-6">
-        <h1>Formulario de contacto</h1>
+        <!-- <h1>Formulario de contacto</h1> -->
         <!-- jj{{ data }} -->
+      <div class="col-xs-12 col-sm-6">
         <form ng-controller="ContactFormCtrl">
           <div class="form-group">
             <label for="name">Nombre: </label>
@@ -69,6 +59,24 @@
           <input class="btn btn-primary" type="submit" value="Enviar Mensaje">
         </form>
       </div>
+
+      <div class="col-xs-12">
+        <div class="title-split">
+          <div class="line"></div>
+          <h2>Contacta con nosotros</h2>
+        </div>
+
+        <p>Puede realizarnos consultas o sugerencias a traves del correo electronico o del telefono, o tambien utilizando el formulatio de contacto que ponemos a su disposicion. Para ello, le dejamos nuestros datos de contacto: </p>
+
+        <p class="contact-name">Nico Garcia Seleccion</p>
+        <p>
+          C/ Abellan 1 - Huetor Tajar(Granada)<br>
+          C/ Federico García Lorca, 16 - Huetor Tajar(Granada)
+        </p>
+        <p><strong>Telefono:</strong> 605 061 292 - 605 061 265</p>
+        <p><strong>Email:</strong> nicogarciaseleccion@gmail.com</p>
+      </div>
+
     </div>
     
     <!-- <div class="container">
