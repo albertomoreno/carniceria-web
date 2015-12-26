@@ -64,12 +64,40 @@
           <p class="footer-icon"><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/nicolas.g.rodrigiez">Facebook</a></p>
           <p class="footer-icon"><i class="fa fa-facebook-square"></i> <a href="https://www.facebook.com/nicogarciacortador">Fan Page</a></p>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4 footer-contact">
           <h5>Contacto</h5>
-          <p class="footer-icon"><i class="fa fa-phone"></i> 605 061 292 <br> 605 061 265</p>
-          <p class="footer-icon"><i class="fa fa-envelope"></i> nicogarciaseleccion@gmail.com</p>
-          <p class="footer-icon"><i class="fa fa-home"></i> C/ Abellan 1, Huetor Tajar, Granada</p>
-          <p class="footer-icon"><i class="fa fa-home"></i> C/ Federico García Lorca, 16, <br>Huetor Tajar, Granada</p>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="media-body">
+              <p class="footer-icon"> 605 061 292 <br> 605 061 265</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="media-body">
+              <p class="footer-icon"> nicogarciaseleccion@gmail.com</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-home"></i>
+            </div>
+            <div class="media-body">
+              <p class="footer-icon"> C/ Abellan 1, Huetor Tajar, Granada</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <i class="fa fa-home"></i>
+            </div>
+            <div class="media-body">
+              <p class="footer-icon"> C/ Federico García Lorca, 16, <br>Huetor Tajar, Granada</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 copyright">
