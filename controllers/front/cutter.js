@@ -7,11 +7,9 @@
 var express = require('express'),
     template = require('../../lib/template.js');
 
-var cutter = express.Router();
-module.exports = cutter;
-
-cutter.get('/cutter', function(req, res) {
-  template.render(res, 'front/cutter/cutter');
-});
-
+module.exports = {
+  cutter: function(req, res) {
+    template.render(res, 'front/cutter/cutter');
+  },
+};
 

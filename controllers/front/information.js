@@ -7,15 +7,13 @@
 var express = require('express'),
     template = require('../../lib/template.js');
 
-var information = express.Router();
-module.exports = information;
 
-information.get('/contact', function(req, res) {
-  template.render(res, 'front/information/contact');
-});
+module.exports = {
+  contact: function(req, res) {
+    template.render(res, 'front/information/contact');
+  },
 
-information.get('/aboutus', function(req, res) {
-  template.render(res, 'front/information/about_us');
-});
-
-
+  about_us: function(req, res) {
+    template.render(res, 'front/information/about_us');
+  },
+};

@@ -7,11 +7,8 @@
 var express = require('express'),
     template = require('../../lib/template.js');
 
-var products = express.Router();
-module.exports = products;
-
-products.get('/products', function(req, res) {
-  template.render(res, 'front/products/products');
-});
-
-
+module.exports = {
+  products: function(req, res) {
+    template.render(res, 'front/products/products');
+  },
+};
